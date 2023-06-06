@@ -29,8 +29,9 @@ public class PremiumServiceImpl implements PremiumService {
 		String policyType=data.getPolicyType();
 		String optionalCover=data.getOptionalCover();
 		int totalPremium=0;
-	
 		int optionalSumInsured=data.getOptionalSumInsured();
+		String policyPlan=data.getPolicyPlan();
+		int policyDays=data.getPolicyDays();
 		
 		
 		
@@ -67,7 +68,7 @@ public class PremiumServiceImpl implements PremiumService {
 						year=3;
 			}
 			else if (productCode==5) {
-				premium=premiumRepository.findStarHospitalCashInsurancePremium(productCode, age, adultCount, childCount, policyType, year, childPremium);
+				premium=premiumRepository.findStarHospitalCashInsurancePremium(productCode, age, adultCount, childCount, policyPlan, year, policyDays);
 			}
 			
 			if(optionalSumInsured >0 && optionalCover.equalsIgnoreCase("Yes")) {
