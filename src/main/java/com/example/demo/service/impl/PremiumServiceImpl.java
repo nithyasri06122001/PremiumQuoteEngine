@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
 import com.example.demo.Repository.PremiumRepository;
 import com.example.demo.entity.PremiumQuoteEntity;
@@ -71,7 +70,7 @@ public class PremiumServiceImpl implements PremiumService {
 				premium=premiumRepository.findStarHospitalCashInsurancePremium(productCode, age, adultCount, childCount, policyPlan, year, policyDays);
 			}
 			
-			if(optionalSumInsured >0 && optionalCover.equalsIgnoreCase("Yes")) {
+			if(productCode==1 && optionalSumInsured >0 && optionalCover.equalsIgnoreCase("Yes")) {
 			switch (optionalSumInsured) {
 			case 500000: {
 				optionlPremium=optionalPremiumList.getLakh_5();
