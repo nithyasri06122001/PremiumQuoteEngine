@@ -13,7 +13,6 @@ import com.example.demo.service.PremiumService;
 
 @CrossOrigin(allowedHeaders = "*")
 @RestController
-
 public class PremiumController {
 	@Autowired
 	private PremiumService womenCareService;

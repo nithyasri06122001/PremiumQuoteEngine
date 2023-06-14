@@ -37,289 +37,224 @@ public class PremiumQuoteEntity {
     private Integer maxAge;
     
     @Column(name="lakh_1")    
-    private Integer lakh_1;
+    private Integer oneLakh;
     @Column(name="lakh_2")    
-    private Integer lakh_2;
+    private Integer twoLakh;
     @Column(name="lakh_3")    
-    private Integer lakh_3;
+    private Integer threeLakh;
     @Column(name="lakh_4")    
-    private Integer lakh_4;
+    private Integer fourLakh;
     @Column(name="lakh_5")    
-    private Integer lakh_5;
+    private Integer fiveLakh;
     @Column(name = "lakh_7_5k")
-    private Integer lakh_7_5k;
+    private Integer sevenLakhFiveThousand;
     @Column(name="lakh_10")
-    private Integer lakh_10;
+    private Integer tenLakh;
     @Column(name="lakh_15") 
-    private Integer lakh_15;
-    @Column(name="lakh_20")
-    private Integer lakh_20;
+    private Integer fifteenLakh;
+	@Column(name="lakh_20")
+    private Integer twentyLakh;
     @Column (name="lakh_25")
-    private Integer lakh_25;
+    private Integer twentyFiveLakh;
     @Column (name="lakh_50")
-    private Integer lakh_50;
+    private Integer fiftyLakh;
     @Column (name = "lakh_75")
-    private Integer lakh_75;
+    private Integer seventyFiveLakh;
     @Column(name="lakh_100")  
-    private Integer lakh_100;
+    private Integer oneCrore;
     @Column(name="payment_plan")
     private String paymentPlan;
     @Column(name = "thousand_1")
-    private Integer thousand_1;
+    private Integer oneThousand;
     @Column(name = "thousand_2")
-    private Integer thousand_2;
+    private Integer twoThousand;
     @Column(name = "thousand_3")
-    private Integer thousand_3;
+    private Integer threeThousand;
     @Column(name="policy_days")
     private Integer policyDays;
     @Column(name = "policy_plan")
     private String policyPlan;
     
-	
-
-	public PremiumQuoteEntity() {
-		super();
-		
-	}
-
-	public int getId() {
+    public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	public int getProductCode() {
 		return productCode;
 	}
-
 	public void setProductCode(int productCode) {
 		this.productCode = productCode;
 	}
-
 	public String getProductName() {
 		return productName;
 	}
-
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-
 	public String getPolicyType() {
 		return policyType;
 	}
-
 	public void setPolicyType(String policyType) {
 		this.policyType = policyType;
 	}
-
 	public Integer getAdultCount() {
 		return adultCount;
 	}
-
 	public void setAdultCount(Integer adultCount) {
 		this.adultCount = adultCount;
 	}
-
 	public Integer getChildCount() {
 		return childCount;
 	}
-
 	public void setChildCount(Integer childCount) {
 		this.childCount = childCount;
 	}
-
 	public String getOptionalCover() {
 		return optionalCover;
 	}
-
 	public void setOptionalCover(String optionalCover) {
 		this.optionalCover = optionalCover;
 	}
-
 	public String getYear() {
 		return year;
 	}
-
 	public void setYear(String year) {
 		this.year = year;
 	}
-
 	public String getAgeBand() {
 		return ageBand;
 	}
-
 	public void setAgeBand(String ageBand) {
 		this.ageBand = ageBand;
 	}
-
 	public Integer getMinAge() {
 		return minAge;
 	}
-
 	public void setMinAge(Integer minAge) {
 		this.minAge = minAge;
 	}
-
 	public Integer getMaxAge() {
 		return maxAge;
 	}
-
 	public void setMaxAge(Integer maxAge) {
 		this.maxAge = maxAge;
 	}
-
-	public Integer getLakh_1() {
-		return lakh_1;
+	public Integer getOneLakh() {
+		return oneLakh;
 	}
-
-	public void setLakh_1(Integer lakh_1) {
-		this.lakh_1 = lakh_1;
+	public void setOneLakh(Integer oneLakh) {
+		this.oneLakh = oneLakh;
 	}
-
-	public Integer getLakh_2() {
-		return lakh_2;
+	public Integer getTwoLakh() {
+		return twoLakh;
 	}
-
-	public void setLakh_2(Integer lakh_2) {
-		this.lakh_2 = lakh_2;
+	public void setTwoLakh(Integer twoLakh) {
+		this.twoLakh = twoLakh;
 	}
-
-	public Integer getLakh_3() {
-		return lakh_3;
+	public Integer getThreeLakh() {
+		return threeLakh;
 	}
-
-	public void setLakh_3(Integer lakh_3) {
-		this.lakh_3 = lakh_3;
+	public void setThreeLakh(Integer threeLakh) {
+		this.threeLakh = threeLakh;
 	}
-
-	public Integer getLakh_4() {
-		return lakh_4;
+	public Integer getFourLakh() {
+		return fourLakh;
 	}
-
-	public void setLakh_4(Integer lakh_4) {
-		this.lakh_4 = lakh_4;
+	public void setFourLakh(Integer fourLakh) {
+		this.fourLakh = fourLakh;
 	}
-
-	public Integer getLakh_5() {
-		return lakh_5;
+	public Integer getFiveLakh() {
+		return fiveLakh;
 	}
-
-	public void setLakh_5(Integer lakh_5) {
-		this.lakh_5 = lakh_5;
+	public void setFiveLakh(Integer fiveLakh) {
+		this.fiveLakh = fiveLakh;
 	}
-
-	public Integer getLakh_7_5k() {
-		return lakh_7_5k;
+	public Integer getSevenLakhFiveThousand() {
+		return sevenLakhFiveThousand;
 	}
-
-	public void setLakh_7_5k(Integer lakh_7_5k) {
-		this.lakh_7_5k = lakh_7_5k;
+	public void setSevenLakhFiveThousand(Integer sevenLakhFiveThousand) {
+		this.sevenLakhFiveThousand = sevenLakhFiveThousand;
 	}
-
-	public Integer getLakh_10() {
-		return lakh_10;
+	public Integer getTenLakh() {
+		return tenLakh;
 	}
-
-	public void setLakh_10(Integer lakh_10) {
-		this.lakh_10 = lakh_10;
+	public void setTenLakh(Integer tenLakh) {
+		this.tenLakh = tenLakh;
 	}
-
-	public Integer getLakh_15() {
-		return lakh_15;
+	public Integer getFifteenLakh() {
+		return fifteenLakh;
 	}
-
-	public void setLakh_15(Integer lakh_15) {
-		this.lakh_15 = lakh_15;
+	public void setFifteenLakh(Integer fifteenLakh) {
+		this.fifteenLakh = fifteenLakh;
 	}
-
-	public Integer getLakh_20() {
-		return lakh_20;
+	public Integer getTwentyLakh() {
+		return twentyLakh;
 	}
-
-	public void setLakh_20(Integer lakh_20) {
-		this.lakh_20 = lakh_20;
+	public void setTwentyLakh(Integer twentyLakh) {
+		this.twentyLakh = twentyLakh;
 	}
-
-	public Integer getLakh_25() {
-		return lakh_25;
+	public Integer getTwentyFiveLakh() {
+		return twentyFiveLakh;
 	}
-
-	public void setLakh_25(Integer lakh_25) {
-		this.lakh_25 = lakh_25;
+	public void setTwentyFiveLakh(Integer twentyFiveLakh) {
+		this.twentyFiveLakh = twentyFiveLakh;
 	}
-
-	public Integer getLakh_50() {
-		return lakh_50;
+	public Integer getFiftyLakh() {
+		return fiftyLakh;
 	}
-
-	public void setLakh_50(Integer lakh_50) {
-		this.lakh_50 = lakh_50;
+	public void setFiftyLakh(Integer fiftyLakh) {
+		this.fiftyLakh = fiftyLakh;
 	}
-
-	public Integer getLakh_75() {
-		return lakh_75;
+	public Integer getSeventyFiveLakh() {
+		return seventyFiveLakh;
 	}
-
-	public void setLakh_75(Integer lakh_75) {
-		this.lakh_75 = lakh_75;
+	public void setSeventyFiveLakh(Integer seventyFiveLakh) {
+		this.seventyFiveLakh = seventyFiveLakh;
 	}
-
-	public Integer getLakh_100() {
-		return lakh_100;
+	public Integer getOneCrore() {
+		return oneCrore;
 	}
-
-	public void setLakh_100(Integer lakh_100) {
-		this.lakh_100 = lakh_100;
+	public void setOneCrore(Integer oneCrore) {
+		this.oneCrore = oneCrore;
 	}
-
 	public String getPaymentPlan() {
 		return paymentPlan;
 	}
-
 	public void setPaymentPlan(String paymentPlan) {
 		this.paymentPlan = paymentPlan;
 	}
-
-	public Integer getThousand_1() {
-		return thousand_1;
+	public Integer getOneThousand() {
+		return oneThousand;
 	}
-
-	public void setThousand_1(Integer thousand_1) {
-		this.thousand_1 = thousand_1;
+	public void setOneThousand(Integer oneThousand) {
+		this.oneThousand = oneThousand;
 	}
-
-	public Integer getThousand_2() {
-		return thousand_2;
+	public Integer getTwoThousand() {
+		return twoThousand;
 	}
-
-	public void setThousand_2(Integer thousand_2) {
-		this.thousand_2 = thousand_2;
+	public void setTwoThousand(Integer twoThousand) {
+		this.twoThousand = twoThousand;
 	}
-
-	public Integer getThousand_3() {
-		return thousand_3;
+	public Integer getThreeThousand() {
+		return threeThousand;
 	}
-
-	public void setThousand_3(Integer thousand_3) {
-		this.thousand_3 = thousand_3;
+	public void setThreeThousand(Integer threeThousand) {
+		this.threeThousand = threeThousand;
 	}
-
 	public Integer getPolicyDays() {
 		return policyDays;
 	}
-
 	public void setPolicyDays(Integer policyDays) {
 		this.policyDays = policyDays;
 	}
-
 	public String getPolicyPlan() {
 		return policyPlan;
 	}
-
 	public void setPolicyPlan(String policyPlan) {
 		this.policyPlan = policyPlan;
-	}	
+	}
+    
 	
 }

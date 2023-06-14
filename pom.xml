@@ -65,19 +65,19 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				 <configuration>
-            <mainClass>com.example.demo.QuickQuoteWomenCareApplication</mainClass>
-            <layout>JAR</layout>
-        </configuration>
+                    <mainClass>com.example.demo.QuickQuoteWomenCareApplication</mainClass>
+                    <layout>JAR</layout>
+                 </configuration>
         <executions>
-    <execution>
-        <goals>
+         <execution>
+          <goals>
             <goal>repackage</goal>
-        </goals>
-    </execution>
-</executions>
-			</plugin>
-		</plugins>
-	</build>
+          </goals>
+         </execution>
+        </executions>
+	   </plugin>
+	  </plugins>
+	 </build>
 
 
 </project>

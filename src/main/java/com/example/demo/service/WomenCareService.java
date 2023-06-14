@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service;
 import com.example.demo.payload.RequestData;
 
 @Service
-public interface PremiumService {
-	Object findPremium(RequestData data);
+public interface WomenCareService {
+	Object findWomenCarePremium(RequestData data);
 }

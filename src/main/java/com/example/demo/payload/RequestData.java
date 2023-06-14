@@ -20,12 +20,6 @@ public class RequestData {
 	private String starExtraProtect;
 	
 	private String policyType;
-
-	private int thousand_1;
-	
-	private int thousand_2;
-	
-	private int thousand_3;
 	
 	private int policyDays;
 	
@@ -55,9 +49,6 @@ public class RequestData {
 		this.optionalCover = optionalCover;
 	}
 
-
-	public RequestData() {
-	}
 
 
 	public int getProductCode() {
@@ -140,34 +131,6 @@ public class RequestData {
 	}
 
 
-	public int getThousand_1() {
-		return thousand_1;
-	}
-
-
-	public void setThousand_1(int thousand_1) {
-		this.thousand_1 = thousand_1;
-	}
-
-
-	public int getThousand_2() {
-		return thousand_2;
-	}
-
-
-	public void setThousand_2(int thousand_2) {
-		this.thousand_2 = thousand_2;
-	}
-
-
-	public int getThousand_3() {
-		return thousand_3;
-	}
-
-
-	public void setThousand_3(int thousand_3) {
-		this.thousand_3 = thousand_3;
-	}
 
 
 	public int getPolicyDays() {
