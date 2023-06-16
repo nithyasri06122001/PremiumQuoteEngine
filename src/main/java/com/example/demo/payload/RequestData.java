@@ -7,6 +7,8 @@ public class RequestData {
 	@NotEmpty(message = "Product code should not be null or empty")
 	private int productCode;
 	
+	private String productName;
+	
 	private int age;
 	
 	private int sumInsured;
@@ -30,6 +32,16 @@ public class RequestData {
 	private int optionalSumInsured;
 	
 	
+	public String getProductName() {
+		return productName;
+	}
+
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+
 	public int getOptionalSumInsured() {
 		return optionalSumInsured;
 	}

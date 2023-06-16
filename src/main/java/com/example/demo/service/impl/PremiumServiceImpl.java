@@ -34,28 +34,34 @@ public class PremiumServiceImpl implements PremiumService {
 
 	@Override
 	public Object findPremium(RequestData data) {
-		int productCode = data.getProductCode();
-		
-		Map<String, Object> object = new HashMap<>();
-
-		if (productCode == 1) {
-			return womenCareService.findWomenCarePremium(data);
-		}
-
-		else if (productCode == 2) {
-			return starComprehensiveService.findStarComprehensivePremium(data);
-		} else if (productCode == 3) {
-			return seniorCitizenRedCarpetService.findSeniorCitizenRedCarpetPremium(data);
-		} else if (productCode == 4) {
-			return starMicroRuralAndFarmerCareService.findStarMicroRuralAndFarmerCarePremium(data);
-
-		} else if (productCode == 5) {
-			return starHospitalCashService.findStarHospitalCashPremium(data);
-		} else {
-			object.put("message", "not found");
-			return object;
-		}
-
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+//	@Override
+//	public Object findPremium(RequestData data) {
+//		int productCode = data.getProductCode();
+//		
+//		Map<String, Object> object = new HashMap<>();
+
+//		if (productCode == 1) {
+//			return womenCareService.findWomenCarePremium(data);
+//		}
+//
+//		else if (productCode == 2) {
+//			return starComprehensiveService.findStarComprehensivePremium(data);
+//		} else if (productCode == 3) {
+//			return seniorCitizenRedCarpetService.findSeniorCitizenRedCarpetPremium(data);
+//		} else if (productCode == 4) {
+//			return starMicroRuralAndFarmerCareService.findStarMicroRuralAndFarmerCarePremium(data);
+//
+//		} else if (productCode == 5) {
+//			return starHospitalCashService.findStarHospitalCashPremium(data);
+//		} else {
+//			object.put("message", "not found");
+//			return object;
+//		}
+
+//	}
 
 }

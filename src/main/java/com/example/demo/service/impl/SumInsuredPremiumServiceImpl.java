@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.PremiumQuoteEntity;
 import com.example.demo.service.SumInsuredPremiumService;
-@Service
+@Service("")
 public class SumInsuredPremiumServiceImpl implements SumInsuredPremiumService {
 
 	@Override

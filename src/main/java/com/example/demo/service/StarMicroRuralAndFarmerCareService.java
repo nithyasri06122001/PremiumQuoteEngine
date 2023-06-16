@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.payload.RequestData;
-
-public interface StarMicroRuralAndFarmerCareService {
-	Object findStarMicroRuralAndFarmerCarePremium(RequestData data);
+import org.springframework.stereotype.Service;
+@Service(value="Star Micro Rural and Farmers Care")
+public interface StarMicroRuralAndFarmerCareService extends PremiumService {
+	
 }

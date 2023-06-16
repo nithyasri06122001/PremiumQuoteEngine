@@ -2,9 +2,7 @@ package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.payload.RequestData;
-
-@Service
-public interface WomenCareService {
-	Object findWomenCarePremium(RequestData data);
+@Service(value="Women Care")
+public interface WomenCareService extends PremiumService {
+	
 }

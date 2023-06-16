@@ -11,7 +11,7 @@ import com.example.demo.entity.PremiumQuoteEntity;
 import com.example.demo.payload.RequestData;
 import com.example.demo.service.StarComprehensiveService;
 import com.example.demo.service.SumInsuredPremiumService;
-@Service
+@Service("Star Comprehensive")
 public class StarComprenensiveServiceImpl implements StarComprehensiveService {
 	
 	@Autowired
@@ -21,7 +21,7 @@ public class StarComprenensiveServiceImpl implements StarComprehensiveService {
 	SumInsuredPremiumService sumInsuredPremiumService;
 
 	@Override
-	public Object findStarComprehensivePremium(RequestData data) {
+	public Object findPremium(RequestData data) {
 		
 		int productCode=data.getProductCode();
 		int age=data.getAge();
@@ -52,5 +52,7 @@ public class StarComprenensiveServiceImpl implements StarComprehensiveService {
 		}	
 		return premiums;
 	}
+
+	
 
 }

@@ -2,9 +2,7 @@ package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.payload.RequestData;
-@Service
-public interface SeniorCitizenRedCarpetService {
-	Object findSeniorCitizenRedCarpetPremium(RequestData data);
 
+@Service(value = "seniorcitizenservice")
+public interface SeniorCitizenRedCarpetService extends PremiumService {
 }
